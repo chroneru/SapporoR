@@ -1,0 +1,8 @@
+
+blockdiag {
+
+    'dyn.load()' -> '.C()';
+
+    'dyn.load()' -> '.Call()';
+
+}
