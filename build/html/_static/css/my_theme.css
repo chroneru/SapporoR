@@ -5,4 +5,14 @@
     .wy-nav-content {
         max-width: none;
     }
+
+    body,p {
+        font-size: 110%;
+    }
+
+    pre {
+        font-size: 100% !important;
+    }
+
 }
+
