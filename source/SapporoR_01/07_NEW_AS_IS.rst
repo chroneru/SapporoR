@@ -78,6 +78,9 @@ IS系は、型をチェックする。
 
 もちろん、IS系も利用可能。
 
+コード
+---------
+
 .. literalinclude:: ../../src_c/is/check_2.c
    :language: C
 
