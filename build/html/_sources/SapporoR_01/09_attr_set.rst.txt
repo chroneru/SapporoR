@@ -13,6 +13,9 @@ Attributes
 
 引数は、ポインタ。
 
+コード
+---------
+
 .. literalinclude:: ../../src_c/attributes/check_attr.c
    :language: C
 
@@ -31,6 +34,9 @@ SET ATTRIBUTES系
 ポインタの構造体であるsxpinfoの要素に、SEXPのタイプを代入する。
 
 引数は、ポインタとSEXPTYPE。
+
+コード
+---------
 
 .. literalinclude:: ../../src_c/set_attributes/set_int.c
    :language: C

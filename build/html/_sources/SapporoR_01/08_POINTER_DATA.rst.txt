@@ -14,6 +14,9 @@ POINTER系
 * LIST_POINTER
 * RAW_POINTER
 
+コード
+---------
+
 .. literalinclude:: ../../src_c/pointer/oneplus.c
    :language: C
 
@@ -31,6 +34,9 @@ DATA系
 * COMPLEX_DATA
 * RECURSIVE_DATA
 * VECTOR_DATA
+
+コード
+---------
 
 .. literalinclude:: ../../src_c/data/oneplus_data.c
    :language: C
@@ -50,6 +56,9 @@ VALUE系
 * RAW_VALUE
 
 実際には、 ``LIST_VALUE`` と ``RAW_VALUE`` は利用できず、異常系のみの実装。
+
+コード
+---------
 
 .. literalinclude:: ../../src_c/value/check_value.c
    :language: C
