@@ -17,3 +17,11 @@
 * S.h
 
 
+次のコマンドで、Rのソースファイルの場所へ移動する。
+
+.. code-block:: bash
+
+   cd `R RHOME`
+   cd include
+
+
