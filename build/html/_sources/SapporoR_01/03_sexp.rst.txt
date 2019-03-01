@@ -2,6 +2,7 @@ SEXP
 =======
 
 ポインタ、構造式(SEXPREC)が示すもののこと。SEXPRECを指すポインタがSEXP。
+SEXPは、 *Simple Expression* の略。
 
 実際には、SEXPRECはOpaqueポインタというものになっていて、利用時にはSEXPを使うだけでいい。
 SEXPRECの内部構造は気にしなくて良いようになっている。

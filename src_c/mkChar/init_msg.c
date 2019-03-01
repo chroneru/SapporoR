@@ -3,7 +3,7 @@
 #include <Rinternals.h>
 #include <Rdefines.h>
 
-SEXP init_msg(SEXP arg_p) {
+SEXP init_msg() {
     SEXP inited;
 
     inited = PROTECT(NEW_CHARACTER(1));

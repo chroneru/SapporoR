@@ -37,6 +37,7 @@
   <link rel="stylesheet" href="../_static/css/my_theme.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="15. math" href="11_math.html" />
     <link rel="prev" title="12. Attributes" href="09_attr_set.html" /> 
 </head>
 
@@ -105,6 +106,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#id4">14.6. コード</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="11_math.html">15. math</a></li>
 </ul>
 
             
@@ -284,7 +286,7 @@
 <span class="cp">#include</span> <span class="cpf">&lt;Rinternals.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;Rdefines.h&gt;</span><span class="cp"></span>
 
-<span class="n">SEXP</span> <span class="nf">init_msg</span><span class="p">(</span><span class="n">SEXP</span> <span class="n">arg_p</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">SEXP</span> <span class="nf">init_msg</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">SEXP</span> <span class="n">inited</span><span class="p">;</span>
 
     <span class="n">inited</span> <span class="o">=</span> <span class="n">PROTECT</span><span class="p">(</span><span class="n">NEW_CHARACTER</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
@@ -299,12 +301,13 @@
 <div class="highlight-R notranslate"><div class="highlight"><pre><span></span><span class="nf">dyn.load</span><span class="p">(</span><span class="s">&quot;init_msg.so&quot;</span><span class="p">)</span>
 
 <span class="n">init_c</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">RES</span> <span class="o">=</span> <span class="nf">.Call</span><span class="p">(</span><span class="s">&quot;init_msg&quot;</span><span class="p">)</span>
+    <span class="n">RES</span> <span class="o">&lt;-</span> <span class="nf">.Call</span><span class="p">(</span><span class="s">&quot;init_msg&quot;</span><span class="p">)</span>
 
     <span class="nf">list</span><span class="p">(</span><span class="n">res</span> <span class="o">=</span> <span class="n">RES</span><span class="p">)</span>
 <span class="p">}</span>
 
 <span class="n">hoge</span> <span class="o">&lt;-</span> <span class="nf">init_c</span><span class="p">()</span>
+
 <span class="n">hoge</span><span class="o">$</span><span class="n">res</span>
 <span class="c1"># [1] &quot;This object is initialized in C.&quot;</span>
 </pre></div>
@@ -319,6 +322,8 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="11_math.html" class="btn btn-neutral float-right" title="15. math" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="09_attr_set.html" class="btn btn-neutral float-left" title="12. Attributes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
