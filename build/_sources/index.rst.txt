@@ -14,6 +14,8 @@ Welcome to SapporoR's documentation!
 
    SapporoR_01/*
 
+   Appendix/SapporoR_01/reference.rst
+
 
 Indices and tables
 ==================
