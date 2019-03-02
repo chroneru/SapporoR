@@ -181,9 +181,10 @@
 <h2>6.2. Rdefines.h<a class="headerlink" href="#rdefines-h" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>さまざまなマクロが定義されているファイル。</p>
 <p>次のコマンドで定義されているマクロを見れる。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep <span class="s2">&quot;#define&quot;</span> /home/reo/.pyenv/versions/anaconda3-4.4.0/lib/R/include/Rdefines.h <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep <span class="s2">&quot;#define&quot;</span> /path/to/R/include/Rdefines.h <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span>
 </pre></div>
 </div>
+<p><strong>/path/to/</strong> は、Rのパスに置き換えてください。</p>
 <p>簡単にまとめると</p>
 <table border="1" class="docutils">
 <colgroup>

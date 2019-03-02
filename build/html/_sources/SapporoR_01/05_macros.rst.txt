@@ -18,7 +18,9 @@ Rdefines.h
 
 .. code-block:: bash
 
-   grep "#define" /home/reo/.pyenv/versions/anaconda3-4.4.0/lib/R/include/Rdefines.h | awk '{print $2}'
+   grep "#define" /path/to/R/include/Rdefines.h | awk '{print $2}'
+
+**/path/to/** は、Rのパスに置き換えてください。
 
 簡単にまとめると
 
